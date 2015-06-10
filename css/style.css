@@ -4,10 +4,12 @@ body {
     padding: 20px;
 }
 
+/* Too much spacing with one of the headers, trimming it down */
 .anti-spacing-top {
     margin-top: -15px;
 }
 
+/* Adding some spacing below an element */
 .spacing-bottom {
     padding-bottom: 25px;
 }
@@ -91,6 +93,7 @@ a {
     max-height: 300px;
 }
 
+/* Custom colors and background, color theme for the site */
 .color-1 {
     color: #ff8c00;
 }
