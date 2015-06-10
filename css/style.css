@@ -1,22 +1,27 @@
 body {
     background-color: #212121;
-    width: 1300px;
-    margin: 0;
+    width: 100%;
+    padding: 20px;
 }
 
-#page-wrapper {
-    position: relative;
-    width: calc(100% - 140px);
-    margin: 40px 45px 40px 45px;
+.anti-spacing-top {
+    margin-top: -15px;
+}
+
+.spacing-bottom {
+    padding-bottom: 25px;
 }
 
 #my-icon {
-    padding: 10px;
-    position: absolute;
-    left: 215px;
-    top: 0;
-    width: 110px;
-    height: 110px;
+    margin: 20px 0 0 0;
+    width: 85px;
+    height: 85px;
+}
+
+.text-no-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .fancy-image-borders {
@@ -30,18 +35,11 @@ body {
 }
 
 #my-name {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    font-size: 50px;
-    font-family: "Times New Roman", Times, serif;
+    font: 50px "Times New Roman", Times, serif;
     line-height: 50px;
 }
 
 #my-title {
-    position: absolute;
-    right: 0;
-    top: 85px;
     font-size: 20px;
     line-height: 20px;
 }
@@ -51,31 +49,21 @@ body {
 }
 
 #main-content {
-    position: absolute;
-    top: 135px;
-    left: 215px;
-    width: 950px;
-    height: 395px;
+    margin-top: 15px;
     border-top: 5px solid #ff8c00;
 }
 
-#themed-color-container {
-    position: absolute;
-    top: 135px;
-    left: 70px;
+.extra-padding-left {
+    padding-left: 10%;
 }
 
 .color-div {
-    margin: 8px;
+    margin: 15px auto;
     height: 75px;
     width: 75px;
 }
 
-#hex-color-hint {
-    position: absolute;
-    top: 425px;
-    left: 70px;
-    margin: 5px;
+.color-hint-text {
     font-size: 20px;
     line-height: 20px;
 }
@@ -88,42 +76,6 @@ body {
     height: 370px;
 }
 
-.feature-banner {
-    font-size: 30px;
-    line-height: 30px;
-}
-
-.the-banner {
-    padding: 0 0 10px 20px;
-}
-
-.feature {
-    position: relative;
-    display: inline-block;
-    height: 290px;
-    width: 290px;
-    margin: 10px;
-}
-
-.feature-name {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: block;
-    bottom: 60px;
-}
-
-.feature-link {
-    position: absolute;
-    width: 100%;
-    text-overflow: ellipsis;
-    bottom: 30px;
-    text-align: center;
-}
-
 a {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -132,10 +84,11 @@ a {
 }
 
 .feature-image {
-    position: absolute;
-    width: 290px;
-    height: 190px;
-    bottom: 105px;
+    margin: 0 auto;
+    width: 100%;
+    height: 75%;
+    max-width: 400px;
+    max-height: 300px;
 }
 
 .color-1 {
